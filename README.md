@@ -8,7 +8,7 @@ Ideally, you would input two teams - or choose an unplayed match (where ft1 colu
 
 All py files generate the simple graphs you see in a basic layout in the rough_idea.png. First we will work on layout and design and then improve the design and labels, information on hover etc. There are more instructions in each py file.
 
-As you can see i'm working off csv and there is no need for SQL solution at this time.
+As you can see i'm working off csv and there is no need for SQL solution at this time. This is the only data coming in: no live feeds, updating etc. All comes from _preview.csv.
 
 For implementation, it can be either a CLI or browser solution but i'll hire based on best idea's for visualization. Please propose how you would like to do the project along with an initial cost/hours budget and we can discuss.
 
