@@ -1,6 +1,6 @@
 # dataviz
 
-Look at idea.png first. Then read:
+Look at rough_idea.png first. Then read:
 
 Idea is a previewer for a sports match. I want to preview as a betting dashboard comparing two teams. 
 
