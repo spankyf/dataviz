@@ -1,19 +1,19 @@
 import pandas as pd
 
 home = 'Munster'
-away = 'Leinster'
 
 raw_df = pd.read_csv('_preview.csv')
 raw_df['baseline'] = raw_df.capres.expanding().mean()
-df = raw_df[(raw_df.team == home)|(raw_df.opposition == home)].reset_index()
+df = raw_df[(raw_df.team == home) | (raw_df.opposition == home)].reset_index()
 
-baseline = df.baseline.plot( )
-                                             #orientation=u'vertical')
+baseline = df.baseline.plot()
+# orientation=u'vertical')
 
 # a plot each for home and away
-actual = df['capres'].plot( marker='o', color='black', linewidth=2)
-market = df['hdp'].plot( marker='x', linestyle='dashed',linewidth=1)
-derived = df['expected_line'].plot( linestyle='dashed',color='blue',marker='x',linewidth=1)
+actual = df['capres'].plot(marker='o', color='black', linewidth=2)
+market = df['hdp'].plot(marker='x', linestyle='dashed', linewidth=1)
+derived = df['expected_line'].plot(
+    linestyle='dashed', color='blue', marker='x', linewidth=1)
 
 """
 1 Transpose/rotate 90degrees
